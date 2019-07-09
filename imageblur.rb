@@ -11,9 +11,8 @@ class Image
 
 
   def output_image
-    @image.each_with_index do |blur, index|
-      puts blur.join[1]
-      puts "index - #{index}"
+    @image.each do |blur|
+      puts blur.join      
       end
     end
   end
